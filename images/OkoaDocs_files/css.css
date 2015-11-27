@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Signika Negative';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Signika Negative Light'), local('SignikaNegative-Light'), url(http://fonts.gstatic.com/s/signikanegative/v5/q5TOjIw4CenPw6C-TW06FpYOZfD05paxOum1Eorz4ao.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Signika Negative';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Signika Negative'), local('SignikaNegative-Regular'), url(http://fonts.gstatic.com/s/signikanegative/v5/Z-Q1hzbY8uAo3TpTyPFMXeDvvFXM8xWgng_3Cf56FV0.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Signika Negative';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Signika Negative Semibold'), local('SignikaNegative-Semibold'), url(http://fonts.gstatic.com/s/signikanegative/v5/q5TOjIw4CenPw6C-TW06Fvw-q-Pnk6uQno1dDeKVYHU.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Signika Negative';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Signika Negative Bold'), local('SignikaNegative-Bold'), url(http://fonts.gstatic.com/s/signikanegative/v5/q5TOjIw4CenPw6C-TW06FuQ6_Aau4Cy11rcU9CM9cFc.woff2) format('woff2');
+}

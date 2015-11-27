@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+   <title>OkoaDocs</title>
+    <link href="OkoaDocs_files/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+    <link href="OkoaDocs_files/style.css" type="text/css" rel="stylesheet" media="all">
+    <link rel="icon" type="image/x-icon" href="http://localhost/refo/images/android-icon-72x72.png">
+    <!--modal dialog-->
+ <script src="OkoaDocs_files/bootstrap.html"></script> 
+<!--//modal dialog-->
+
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //Custom Theme files -->
+<!-- js -->
+<script src="OkoaDocs_files/jquery-1.js"></script> 
+<link href="OkoaDocs_files/gallery.css" rel="stylesheet" type="text/css">
+<!-- //js -->	
+<!--fonts-->
+<link href="OkoaDocs_files/css_003.css" rel="stylesheet" type="text/css">
+<link href="OkoaDocs_files/css.css" rel="stylesheet" type="text/css">
+<link href="OkoaDocs_files/css_002.css" rel="stylesheet" type="text/css">
+<!--/fonts-->
+<!-- start-smoth-scrolling-->
+<script type="text/javascript" src="OkoaDocs_files/move-top.js"></script>
+<script type="text/javascript" src="OkoaDocs_files/easing.js"></script>	
+<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+</script>
+<!--//end-smoth-scrolling-->
+</head>
+<body>
+	<!--banner-->
+	<div class="banner">
+		<!--header-->
+		<div id="head">
+		<div class="headder">		
+				<nav class="navbar navbar-default">
+					<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"> </span>
+								<span class="icon-bar"> </span>
+								<span class="icon-bar"> </span>
+							</button>
+						</div>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="#home" class="active">Home</a></li>
+								<li><a href="#about" class="scroll">About us</a></li>
+								<li><a href="#services" class="scroll">Services</a></li>
+								<li><a href="#contact" class="scroll">Contact</a></li>
+<br>
+                                                                
+								
+
+							</ul>	
+						</div>	
+				</nav>	
+					<div class="logo">
+						<a class="navbar-brand" href="http://localhost/refo/index.php"><img src="OkoaDocs_files/OkoaDocsLogo.png"></a>
+				</div>
+					<div class="header-right-text">
+
+					<!--modal dialog-->
+
+<a href="#openModal"><b>Report a document</b></a>
+<div id="openModal" class="modalDialog">
+<a href="#close" title="Close" class="close">X</a>
+		<h2>Report a document</h2>
+		  <form action="" method="post">
+        
+        <fieldset>
+          
+          <label for="name">Name:</label>
+          
+          <input id="name" name="name_on_document" placeholder="Name on the document" type="text">
+          
+
+          <label for="name">Phone Number:</label>
+          <input id="number" name="contact_of_finder" placeholder="Finder's number" type="text">
+
+          <label for="name">Location:</label>
+          <input id="location" name="location" placeholder="location found" type="text">
+
+        <label for="category">Select category:</label>
+        <select id="job" name="user_category">
+            <option selected="selected" value="select">Select Category</option>
+            <option value="id">Identity Cards</option>
+            <option value="passport">Passports</option>
+            <option value="driving_license">Driving Licenses</option>
+            <option value="birth_certificate"> Birth certificates</option>
+            <option value="atm">ATM cards</option>
+            <option value="nhif">NHIF cards</option>
+            <option value="school_certificates">School Certificates</option>
+            <option value="car_log_books">Car Log Books</option>
+            <option value="iprs">IPRS cards</option> 
+          
+        </select>  
+ 	
+              
+
+         
+        
+          
+           <label for="serial">Identity Number</label> 
+          <input name="identity_number" placeholder="Document's Identity Number" type="text">
+
+       <button onclick="location.href='#smallModal" name="send" type="submit">Send</button>
+       
+        
+	</fieldset></form></div>
+
+<a href="#closeModal"><b>Search a document</b></a>
+<div id="closeModal" class="modalDialog">
+<a href="#close" title="Close" class="close">X</a>
+	<h2>Search for your document</h2>
+		  <form action="" method="post">
+        <fieldset>
+
+      <label for="name">Name:</label>
+      <input id="name" name="user_name" placeholder="Name on the document" type="text"> 
+        
+        <label for="category">Select category:</label>
+        <select id="job" name="user_category">
+            <option selected="selected" value="select">Select Category</option>
+            <option value="id">Identity Cards</option>
+            <option value="passport">Passports</option>
+            <option value="driving_license">Driving Licenses</option>
+            <option value="birth_certificate"> Birth certificates</option>
+            <option value="atm">ATM cards</option>
+            <option value="nhif">NHIF cards</option>
+            <option value="school_certificates">School Certificates</option>
+            <option value="car_log_books">Car Log Books</option>
+            <option value="iprs">IPRS cards</option> 
+          
+        </select>  
+ 	
+              
+
+         
+        
+ <label for="serial">Identity Number</label>
+          <input id="number" name="identity_number" type="text">
+          
+          
+        </fieldset>
+      <button onclick="location.href='#displayModal'" name="submit1" type="submit">Send</button> 
+        <!--<button  name="submit1" type="submit">Send</button>-->
+	</form></div>
+
+ </div>
+					
+	</div>
+	</div>
+<h1>OKOADOCS</h1>
+
+
+
+		<h3>Retrieve your lost documents</h3>
+                
+
+
+  
+
+
+	</div>
+
+					<!--<div class="search-bar">
+			<input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
+			<input type="submit" value="">
+	   </div>
+				<div class="clearfix"> </div>	-->		
+			
+		<!--//header-->
+		
+	<!--//banner-->
+	<!--about-->
+	<div class="about" id="about">
+		<div class="container">
+			<h6>About Us</h6>
+			<div class="about-grids">
+				<div class="col-md-6 about-info">
+					<img src="OkoaDocs_files/img1.jpg" alt="">
+				</div>
+				<div class="col-md-6 about-info">
+					<h3>OkoaDocs</h3>
+					<p>The name OKOADOCS means to SAVE documents,
+where the word Okoa is a Swahili word that means save and docs the short form of the word documents</p>
+					<p class="ab-text"> OKOADOCS is an online platform that will enable users to retrieve their lost documents.
+One can also report incase has found any document to us so that we can add it in our database. <br> We are going to help people retrieve the lost docoments such as:</p>
+
+
+<ul>
+	<li>IDs</li>
+	<li>Birth Certificates</li>
+	<li>Driving Licences</li>
+	<li>ATM cards</li>
+	
+</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!--/about-->
+	<!--services-->
+	<div class="services" id="services">
+		<!-- container -->
+		<div class="container">
+		   <h6>Our Services</h6>
+			<div class="serve-grids">
+				<div class="serve-grids-top">
+					<div class="col-md-3 service-box">
+						<figure class="icon">
+							<img src="OkoaDocs_files/documents.png">
+						
+						</figure>
+						
+						<p>We collect lost documents</p>
+						
+					</div>
+					<div class="col-md-3 service-box">
+						<figure class="icon">
+						<img src="OkoaDocs_files/student.png">
+						</figure>
+					
+						<p>We Keep data of the lost documents found</p>
+						
+					</div>
+					<div id="img">
+					<div class="col-md-3 service-box">
+						<figure class="icon">
+							<img src="OkoaDocs_files/agreement.png">
+						</figure>
+						
+						<p>Reconnect you with your document</p>
+					</div>
+					</div>
+					
+					<div class="clearfix"> </div>
+			</div>
+		</div>
+		<!-- //container -->
+	</div>
+</div>
+	<!--/services-->
+	
+	<div class="mid-section">
+	    <div class="container">
+		     <div class="mid-top">
+		        <h2>Here at your service</h2>
+				
+		     </div>
+		</div>
+	</div>
+
+<div id="contact" class="contact">
+<h6>Contact</h6>
+<div class="form-map">	
+<div id="form">
+	
+		
+		   <p class="name">Your Name (required)</p><p>
+		 	</p><p><span class="wpcf7-form-control-wrap your-name">
+		 	<input name="your-name" size="60" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-      required" aria-required="true" aria-invalid="false" type="text"></span></p>
+		 	<p class="name">Subject</p>
+		 	<p> <span class="wpcf7-form-control-wrap Subject">
+		 	<input name="Subject" size="60" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" type="text"></span></p>
+		 	<p class="name">Your Email</p>
+		 	<p> <span class="wpcf7-form-control-wrap your-email">
+		 	<input name="your-email" size="60" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" type="email"></span></p>
+		 	<p class="name">Message</p> 
+		 	<p><span class="wpcf7-form-control-wrap Message"><textarea name="Message" cols="57" rows="8" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></textarea></span></p>
+		 	<input value="Submit" class="wpcf7-form-control wpcf7-submit" type="submit">
+	
+
+</div>
+ 
+	
+                <div class="map">
+                <iframe src="OkoaDocs_files/embed.xhtml" style="border:0" allowfullscreen="" frameborder="0" height="415" width="45%"></iframe>
+                <br>
+               <p> Bishop Magua Centre,</p>
+               <p> Ground floor,</p>
+               <p> phone: +254 711 197 311</p>
+               <p>Email:<a href="mailto:okoadocs@gmail.com">okoadocs@gmail.com</a><br>
+                
+                </p></div>	
+</div>
+</div>
+
+
+			
+	<div class="footer">
+		<div class="container">
+			<p>Copyright @ 2015 OkoaDocs. All rights reserved </p>
+		</div>
+	</div>
+	<!--//contact-->
+		
+
+
+
+
+
+	
+
+ 
+
+<div id="displayModal" class="modalDialog">
+<a href="#close" title="Close" class="close">X</a>
+<h3>Search Results</h3>
+<br>
+<b>Notice</b>:  Undefined variable: display in <b>/opt/lampp/htdocs/refo/index.php</b> on line <b>409</b><br>
+<br>
+<b>Notice</b>:  Undefined variable: idhide in <b>/opt/lampp/htdocs/refo/index.php</b> on line <b>409</b><br>
+<br>
+<b>Notice</b>:  Undefined variable: row in <b>/opt/lampp/htdocs/refo/index.php</b> on line <b>409</b><br>
+Thanks  for using our platform. Your document has been found that ends with identity number. <br><br>
+<b>Notice</b>:  Undefined variable: idhide in <b>/opt/lampp/htdocs/refo/index.php</b> on line <b>415</b><br>
+</div>
+<!--ending-->
+<!--small modal-->
+
+<div id="smallModal" class="modalDialog">
+<a href="#close" title="Close" class="close">X</a>
+
+<p>Hello!!<br>
+Thanks for reporting the document you have found we highly appreciate<br>
+For more information:<br>
+Call:0711197311<br>
+Email:okoadocs@info.com
+</p>
+</div>
+
+<!--end small modal-->
+ 
+		<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<!--//smooth-scrolling-of-move-up
+	<!-- Bootstrap core JavaScript
+    ================================================== --->
+    <!-- Placed at the end of the document so the pages load faster-->
+    <script src="OkoaDocs_files/bootstrap.js"> </script>
+
+
+</body></html>
